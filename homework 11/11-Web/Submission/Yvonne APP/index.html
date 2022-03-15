@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>YM Visualization Dash HMK11 </title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/yeti/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!╌NavBar start╌>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!╌NavBar END╌>
+      <!╌Adding space btwn nav and cards╌>
+      <br>
+      <br>
+      <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-sm-12"> <!╌this is my first box╌>
+                <div class="card bg-secondary mb-3">
+                    <div class="card-header">Summary: Latitude vs. X</div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <img src="static/assets/images/Fig1.png" height="100%" width="100%">
+                                </div>
+                                <div class="col-md-4">
+                                    <br>
+                                    <p class="card-text">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                                    </p>
+                                    <p class="card-text"> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+                                    </p>
+                                    <p class="card-text">weather_api_key = "7732e92e104eb06763805989adf3076b"
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12"> <!╌this is my second box╌>
+                <div class="card bg-secondary mb-3">
+                    <div class="card-header">Visualization</div>
+                    <div class="card-body">
+                        <div class="container-fluid"> 
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <a href="temperature.html"><img src="static/assets/images/Fig1.png" height="100%" width="100%"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <a href="humidity.html"><img src="static/assets/images/Fig2.png" height="100%" width="100%"></a>
+                                </div>
+                            </div>
+                            <br>
+                            <!╌second row╌>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <a href="cloudiness.html"><img src="static/assets/images/Fig3.png" height="100%" width="100%"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <a href="windspeed.html"><img src="static/assets/images/Fig4.png" height="100%" width="100%"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+/* Making the body background a color */
+body{background-color: grey;}
+
+/* Selecting elements by class */
+.card-header{color: darkslategray;
+            font-size: 28px;
+            font-weight: bold;}
+
+ /* border around the chosen visualization  */           
+.graph-border{border: 3px solid rgb(79, 24, 206) !important;
+}
