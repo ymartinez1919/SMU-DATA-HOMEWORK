@@ -9,3 +9,6 @@ body{background-color: grey;}
  /* border around the chosen visualization  */           
 .graph-border{border: 3px solid rgb(79, 24, 206) !important;
 }
+
+
+.navbar-toggler{max-width: 480px; background-color: rgb(79, 24, 206)!important;}
