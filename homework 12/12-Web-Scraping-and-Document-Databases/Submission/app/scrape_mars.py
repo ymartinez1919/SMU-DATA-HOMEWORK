@@ -14,16 +14,16 @@ class ScrapingHelper():
         executable_path = {'executable_path': ChromeDriverManager().install()}
         browser = Browser('chrome', **executable_path, headless=False)
 
-        # Scrape the Mars News Site and collect the latest News Title and Paragraph Text.
-        # url = "https://redplanetscience.com/"
-        # browser.visit(url)
-        # html = browser.html
-        # soup = BeautifulSoup(html)
+        #Scrape the Mars News Site and collect the latest News Title and Paragraph Text.
+        url = "https://redplanetscience.com/"
+        browser.visit(url)
+        html = browser.html
+        soup = BeautifulSoup(html)
 
-        # #news title
-        # news_title = soup.find("div", {"class":"content_title"}).text
-        # #paragraph text
-        # news_p = soup.find("div", {"class":"article_teaser_body"}).text
+        #news title
+        news_title = soup.find("div", {"class":"content_title"}).text
+        #paragraph text
+        news_p = soup.find("div", {"class":"article_teaser_body"}).text
 
         #Use splinter to navigate the site and find the image url for the current Featured Mars Image and assign the url string to a variable called featured_image_url.
         url = "https://spaceimages-mars.com/"
