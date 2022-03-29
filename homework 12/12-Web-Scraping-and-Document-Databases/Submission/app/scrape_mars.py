@@ -81,8 +81,8 @@ class ScrapingHelper():
                 hemisphere_image_urls.append(hemisphere)
 
         alldata_scraped = {}
-        # alldata_scraped["news_p"] = news_p
-        # alldata_scraped["news_title"] = news_title
+        alldata_scraped["news_p"] = news_p
+        alldata_scraped["news_title"] = news_title
         alldata_scraped["featured_image_url"] = featured_image_url
         alldata_scraped["mars_facts"] = mars_facts.to_html(header=False)
         alldata_scraped["hemispheres"] = hemisphere_image_urls
