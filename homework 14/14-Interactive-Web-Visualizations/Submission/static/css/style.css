@@ -1,0 +1,29 @@
+/* Change body color of whole page */
+body {background-color: white;}
+
+
+
+/* Demographic Info Title*/
+.card-header{ color:#073642;
+    font-size: 25px !important}
+
+/*titles all the same*/
+.panel-heading{ color:#073642;
+    font-size: 25px !important}
+
+/* *subtitles all the same*/
+.panel-heading2{ color:#073642;
+    font-size: 25px !important}
+
+
+/* Test Subject ID No.: */
+.well{ 
+color:#073642;
+font-size: 20px !important
+}
+
+
+/* body color */
+#selDataset {
+    background-color: lightgrey;
+}
